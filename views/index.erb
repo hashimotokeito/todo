@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8">
+    <title>todoプログラム</title>
+  </head>
+  <body>
+    <p>曜日：<% day=Date.today.wday%>
+    <% days=["日曜日","月曜日","火曜日","水曜日","木曜日","金曜日","土曜日"]%>
+    <%= days[day]%></p>
+    <p><%= days[day]%>のToDo</p>
+
+    <% if days[day]=="月曜日"%>
+    <p>イチゴを食べる</p>
+    <% elsif days[day]=="火曜日"%>
+    <p>メロンを食べる</p>
+    <% elsif days[day]=="水曜日"%>
+    <p>スイカを食べる</p>
+    <% elsif days[day]=="木曜日"%>
+    <p>リンゴを食べる</p>
+    <% elsif days[day]=="金曜日"%>
+    <p>ブドウを食べる</p>
+    <% elsif days[day]=="土曜日"%>
+    <p>オレンジを食べる</p>
+    <% else days[day]=="日曜日"%>
+    <p>オナニーをする</p>
+    <%end%>
+  </body>
+</html>
